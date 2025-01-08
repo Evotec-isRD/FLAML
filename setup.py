@@ -72,7 +72,7 @@ setuptools.setup(
             "statsmodels>=0.12.2",
             "psutil==5.8.0",
             "dataclasses",
-            "transformers[torch]==4.26",
+            "transformers[torch]",
             "datasets",
             "nltk<=3.8.1",  # 3.8.2 doesn't work with mlflow
             "rouge_score",
@@ -104,7 +104,7 @@ setuptools.setup(
             "packaging",
         ],
         "ray": [
-            "ray[tune]~=1.13",
+            "ray[tune]<2.5.0",
         ],
         "azureml": [
             "azureml-mlflow",
