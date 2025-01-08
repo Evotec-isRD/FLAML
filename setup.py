@@ -100,7 +100,7 @@ setuptools.setup(
             "catboost>=0.26,<=1.2.5; python_version>='3.11'",
         ],
         "blendsearch": [
-            "optuna>=2.8.0,<=3.6.1",
+            "optuna>=4.0.0,<5",
             "packaging",
         ],
         "ray": [
