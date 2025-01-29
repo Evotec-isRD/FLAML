@@ -59,6 +59,15 @@ def _test_hf_data():
     except requests.exceptions.ConnectionError:
         return
 
+    ## Tests will only run if there is a GPU available
+    try:
+        from torch.cuda import is_available
+
+        if not is_available():
+            return
+    except ImportError:
+        return
+
     custom_sent_keys = ["sentence1", "sentence2"]
     label_key = "label"
 
